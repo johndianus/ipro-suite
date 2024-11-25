@@ -52,7 +52,7 @@ export const DayOfWeek = styled.div`
   }
 `;
 
-export const DaysGrid = styled.div`
+export const DaysGrid = styled.span`
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 5px;
@@ -108,4 +108,87 @@ export const Event = styled.div`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+`;
+
+export const ModalContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+`;
+
+export const ModalBox = styled.div`
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-sizing: border-box;
+  height: auto;
+  max-height: 90%;
+  overflow-y: auto;
+`;
+
+
+export const Input = styled.input`
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+`;
+
+export const ActionContainer = styled.div`
+  margin-top: 10px;
+`;
+
+export const Error = styled.div`
+  color: red;
+  font-size: 12px;
+`;
+
+export const Save = styled.button`
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  borderRadius: 4px;
+`;
+
+export const Cancel = styled.button`
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+`;
+
+export const EventWrap = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: blue;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-bottom: 2px;
+`;
+
+export const EventContainer = styled.div`
+  display: block;
+  margin-left: 4px;
 `;
